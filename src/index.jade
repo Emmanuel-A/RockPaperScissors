@@ -9,7 +9,7 @@ html
 
     title Rock, Paper, Scissors
 
-    meta(name="description", content="Hello World")
+    meta(name="Emmanuel Amponsah", content="Rock, Paper, Scissors game")
 
     meta(name="viewport", content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui")
 
@@ -17,14 +17,25 @@ html
 
   body
 
-    //- button(class="rock", onclick="game.getPlayerChoice('rock')").
-    //-     rock
-              
-    //- button(class="paper", onclick="game.getPlayerChoice('paper')").
-    //-     paper
+    .wrapper
+
+    h1 Rock, Paper, Scissors
     
-    //- button(class="scissors", onclick="game.getPlayerChoice('scissors')").
-    //-     scissors     
+    div.game
+
+    input(type="text") 
+
+    br
+
+    a(class="rock", href="#") Rock
+
+    br
+
+    a(class="paper", href="#") Paper
+
+    br
+
+    a(class="scissors", href="#") Scissors
 
     script(type="text/javascript", src="https://code.jquery.com/jquery-2.1.1.min.js")
 

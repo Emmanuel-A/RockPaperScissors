@@ -17,7 +17,7 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/public/index.html');
 });
 
-// Handle Socket Connection
+// Handle Socket Connection 
 io.on('connection', function(socket){
 
   console.log('A User Connected', id);
@@ -32,9 +32,13 @@ io.on('connection', function(socket){
   io.emit('connected', id);
 
   // Handle Message Event
-  socket.on('move', function(coord){
-  	// console.log(coord);
-    io.emit('update', coord);
+  // socket.on('move', function(coord){
+  // 	console.log(coord);
+  //   io.emit('update', coord);
+  // });
+
+  socket.on('message', function(text){
+    io.emit('update', text);
   });
 });
 
