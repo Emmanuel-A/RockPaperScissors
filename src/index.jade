@@ -7,7 +7,7 @@ html
 
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
 
-    title Rock Paper Scissors
+    title Rock, Paper, Scissors
 
     meta(name="description", content="Hello World")
 
@@ -16,7 +16,16 @@ html
     link(rel="stylesheet", href="assets/styles/main.css", type="text/css")
 
   body
-                    
+
+    button(id="rock-btn", onclick="game.getPlayerChoice('rock')").
+        rock
+              
+    button(id="paper-btn", onclick="game.getPlayerChoice('paper')").
+        paper
+    
+    button(id="scissors-btn", onclick="game.getPlayerChoice('scissors')").
+        scissors     
+
     script(type="text/javascript", src="https://code.jquery.com/jquery-2.1.1.min.js")
 
     script(type="text/javascript", src="https://cdn.socket.io/socket.io-1.1.0.js")

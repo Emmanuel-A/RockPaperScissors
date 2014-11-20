@@ -1,9 +1,9 @@
 {
   "name": "socket-boilerplate",
-  "description": "Socket Boilerplate Project",
+  "description": "Rock, Paper, Scissors Game",
   "version": "0.0.0",
-  "homepage": "http://darcyclarke.me",
-  "author": "Darcy Clarke",
+  "homepage": "http://emmanuel-amponsah.com",
+  "author": "Emmanuel Amponsah",
   "main": "server.js",
   "dependencies": {
     "express": "*",

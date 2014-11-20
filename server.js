@@ -33,7 +33,7 @@ io.on('connection', function(socket){
 
   // Handle Message Event
   socket.on('move', function(coord){
-  	console.log(coord);
+  	// console.log(coord);
     io.emit('update', coord);
   });
 });
