@@ -6,9 +6,22 @@ jQuery(function($) {
     var socket = io();
 
     // Send A Message To The Server
-    $('a.rock').on('click', function(){
+    $('#rock').on('click', function(){
       var text = $('input').val();
       socket.emit('message', text);
+      alert('Rock!');
+    });
+
+    $('#paper').on('click', function(){
+        var text = $('input').val();
+        socket.emit('message', text);
+        alert('Paper!');
+      });
+
+    $('#scissors').on('click', function(){
+      var text = $('input').val();
+      socket.emit('message', text);
+      alert('Scissors!');
     });
 
     // Recieve Update Event From The Server
