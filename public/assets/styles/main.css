@@ -1,24 +1,27 @@
+/* line 1, /Users/ruthamponsah/Desktop/Big Blue/RPSGame/src/assets/styles/index.sass */
 body {
   font-family: sans-serif; }
 
-.box {
-  background-color: #113F8C;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%; }
-
+/* line 4, /Users/ruthamponsah/Desktop/Big Blue/RPSGame/src/assets/styles/index.sass */
 .game {
+  text-align: center;
   display: block;
-  min-height: 100px;
-  width: 100%; }
+  width: 700px;
+  height: 500px;
+  background-color: #f0f0f0;
+  border: 1px solid #000000; }
 
+/* line 12, /Users/ruthamponsah/Desktop/Big Blue/RPSGame/src/assets/styles/index.sass */
 ul {
+  padding: 53% 0 0 0;
   list-style: none; }
 
+/* line 16, /Users/ruthamponsah/Desktop/Big Blue/RPSGame/src/assets/styles/index.sass */
 li {
   display: inline-block;
   padding: 0 0 0 10px; }
 
+/* line 20, /Users/ruthamponsah/Desktop/Big Blue/RPSGame/src/assets/styles/index.sass */
 a {
   text-decoration: none;
   color: black;
