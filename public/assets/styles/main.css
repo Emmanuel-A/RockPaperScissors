@@ -50,4 +50,18 @@ a {
   top: 0px;
   position: absolute;
   margin-left: -52px; }
+
+#rock:hover{
+  border: solid 2px turquoise;
+  border-radius: 50%;
+}  
+
+#paper:hover{
+  border: solid 2px turquoise;
+  border-radius: 50%;
+}  
   
+#scissors:hover{
+  border: solid 2px turquoise;
+  border-radius: 50%;
+}  
