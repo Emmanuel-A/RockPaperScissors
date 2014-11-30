@@ -60,16 +60,12 @@ io.on('disconnect', function(socket){
   }
 });
 
-// var win = function() {
-//     document.getElementById("game").style.backgroundColor = "red";
-// };
-
 // Game logic
   var gameLoop = function(){
     var text = countdown;
     io.emit('countdown', text);
     countdown = countdown - 1;
-    if (countdown <= 0){
+    if (countdown < 0){
       countdown = 5;
       compare();
     };
@@ -99,25 +95,23 @@ io.on('disconnect', function(socket){
     if(a === b){
       text = 'draw';      
     }
-    else if(a === 'rock' && b=== 'scissors'){
-      text = 'player threw:' + a +' computer threw:'+ b + ' you win!';
+    else if(a === 'rock' && b === 'scissors'){
+      text = 'You threw: ' + a +'  Opponent threw: '+ b + ' ...YOU WIN!';
     }
     else if(a === 'rock' && b === 'paper'){
-      text = 'player threw:' + a +' computer threw:'+ b + ' you lose!';
+      text = 'You threw: ' + a +'  Opponent threw: '+ b + ' ...YOU LOSE!';
     }
     else if(a === 'paper' && b === 'scissors'){
-      text = 'player threw:' + a +' computer threw:'+ b + ' you lose!';
+      text = 'You threw: ' + a +'  Opponent threw: '+ b + ' ...YOU LOSE!';
     }
     else if(a === 'paper' && b === 'rock'){
-      text = 'player threw:' + a +' computer threw:'+ b + ' you win!';
-      // win();
+      text = 'You threw: ' + a +'  Opponent threw:'+ b + ' ...YOU WIN!';
     }
     else if(a === 'scissors' && b === 'paper'){
-      text = 'player threw:' + a+' computer threw:'+ b + ' you win!';
-      // win();      
+      text = 'You threw: ' + a+' Opponent threw: '+ b + ' ...YOU WIN!';
     }
     else if(a === 'scissors' && b === 'rock'){
-      text = 'player threw:' + a +' computer threw:'+ b + ' you lose!';
+      text = 'You threw: ' + a +'  Opponent threw: '+ b + ' ...YOU LOSE!';
     } 
     io.emit('result', text);
     playeronechoice = null;

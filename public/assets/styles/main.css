@@ -9,20 +9,48 @@ body {
   width: 700px;
   height: 500px;
   background-color: #f0f0f0;
-  border: 1px solid #000000; }
+  background: url(../images/game-screen.jpg);
+  border: 1px solid gray; }
 
-/* line 12, /Users/ruthamponsah/Desktop/Big Blue/RPSGame/src/assets/styles/index.sass */
+/* line 13, /Users/ruthamponsah/Desktop/Big Blue/RPSGame/src/assets/styles/index.sass */
 ul {
-  padding: 53% 0 0 0;
-  list-style: none; }
+  list-style: none;
+  bottom: -38px;
+  position: absolute;
+  margin-left: 220px; }
 
-/* line 16, /Users/ruthamponsah/Desktop/Big Blue/RPSGame/src/assets/styles/index.sass */
+/* line 19, /Users/ruthamponsah/Desktop/Big Blue/RPSGame/src/assets/styles/index.sass */
 li {
   display: inline-block;
   padding: 0 0 0 10px; }
 
-/* line 20, /Users/ruthamponsah/Desktop/Big Blue/RPSGame/src/assets/styles/index.sass */
+/* line 23, /Users/ruthamponsah/Desktop/Big Blue/RPSGame/src/assets/styles/index.sass */
 a {
   text-decoration: none;
   color: black;
   font-weight: lighter; }
+
+/* line 28, /Users/ruthamponsah/Desktop/Big Blue/RPSGame/src/assets/styles/index.sass */
+#countdown {
+  height: 60px;
+  margin: -70px 0 0 0;
+  font-size: 550px;
+  color: #f00084;
+  opacity: 0.8; }
+
+/* line 35, /Users/ruthamponsah/Desktop/Big Blue/RPSGame/src/assets/styles/index.sass */
+#result {
+  height: 20px;
+  padding: 10px;
+  background-color: #f7def3;
+  bottom: 70px;
+  position: absolute;
+  font-size: 20px;
+  text-transform: uppercase; }
+
+/* line 44, /Users/ruthamponsah/Desktop/Big Blue/RPSGame/src/assets/styles/index.sass */
+#versus {
+  width: 100px;
+  top: 0px;
+  position: absolute;
+  margin-left: -52px; }

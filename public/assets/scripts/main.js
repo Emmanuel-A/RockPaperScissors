@@ -35,12 +35,11 @@ jQuery(function($) {
     socket.on('result', function(text){
       console.log(text);
       $('#result').html(text);
+      $('#countdown').color = "red" ;
     });
 
     socket.on('countdown', function(text){
       console.log(text);
-      for (var i = 1; i > 0; --i){
-        $('#countdown').html(text);
-      }  
+      $('#countdown').html(text);
     });
 });
