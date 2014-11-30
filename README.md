@@ -4,7 +4,8 @@ This is a simple Rock, Paper, Scissors game built with Node.js and Socket.io
 It is a two player game or player can face the computer if there are no players online.
 Player may also watch computer vs computer match if not interested in joining the fun.
 
-How to run server
+
+How to run server:
 
 Clone the repo
 -npm install
